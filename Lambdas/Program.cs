@@ -87,7 +87,7 @@ namespace Lambdas
             Console.WriteLine("Q9P3: ");
             foreach(Account a in accountsgrtTenthousand)
             {
-                Console.WriteLine(a.id+","+a.name+","+a.balance);
+                Console.WriteLine(a.ToString());
             }
 
         }
@@ -106,7 +106,7 @@ namespace Lambdas
         public Account() { }
         public override string ToString()
         {
-            return String.Format("[Account ID:%d , Account name:%s ,  Account balance:%d]\n",id,name,balance);
+            return String.Format("[Account ID: {0},Account name: {1},Account balance: {2}]",id,name,balance);
         }
     }
 }
